@@ -28,8 +28,12 @@ function onPageDetailsReceived(details) {
              morph += "</tr>" + obj.morphology1 + "</table>" ;
            }
          });
-        console.log(morph);
-	document.getElementById('output').innerHTML = morph;
+        if (morph.length) {
+           console.log(morph);
+	   document.getElementById('output').innerHTML = morph;
+        } else {
+	   document.getElementById('output').innerText = "Sorry...unable to find!!";
+        }
     },
     error: function (responseData, textStatus, errorThrown) {
         //alert(errorThrown);
