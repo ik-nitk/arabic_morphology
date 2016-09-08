@@ -4,6 +4,7 @@ var serverurl = 'http://arabictest.herokuapp.com/morphology?json=true';
 function onPageDetailsReceived(details) {
   //Get the moropholgy for this 
   console.log(details.summary);
+  document.getElementById('output').innerText = "Loading...";
   $.ajax({
     type: 'GET',
     url: serverurl+'&txt='+ encodeURIComponent(details.summary),

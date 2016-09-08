@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "sample",
-	"description": "a sample manifest",
-	"version": "1.0",
+	"name": "Arabic morphology tool",
+	"description": "Tool to display morphology of arabic word when selected",
+	"version": "1.1",
 	"permissions": [
 		"storage"
 	],
